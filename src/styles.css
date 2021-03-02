@@ -10,6 +10,7 @@
   
   body {
     margin: 0;
+    /* background-color: rgba(0,0,0,.87); */
   }
   
   .container {
@@ -116,7 +117,14 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+  mat-toolbar {
+   background-color: #1976d2 !important;
+  }
+
+  mat-toolbar span {
+   color: white !important;
+  }
+
   app-top-bar h1 {
     color: white;
     margin: 0;
@@ -136,5 +144,5 @@
     border-radius: 2px;
     background-color: #EEEEEE;
   }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; padding: 0px !important;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}

@@ -1,3 +1,14 @@
 table {
   width: 100%;
 }
+
+.mat-column-note {
+   width: 78%;
+   padding: 5px 15px;
+ }
+ 
+ .mat-column-course {
+   width: 22%;
+   padding: 5px 15px;
+ }
+ 
