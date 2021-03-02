@@ -14,15 +14,17 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { NotesListComponent } from './notes-list/notes-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // // Material Modules
-// import {
-//   MatToolbarModule,
-//   MatTableModule,
-// } from '@angular/material';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatTableModule,
+    MatToolbarModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: NotesListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
@@ -38,10 +40,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    NotesListComponent,
-    // MatToolbarModule,
-    // MatTableModule,
-    BrowserAnimationsModule
+    NotesListComponent
   ],
   bootstrap: [
     AppComponent
